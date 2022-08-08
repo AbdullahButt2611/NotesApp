@@ -29,7 +29,8 @@ body{
     padding: 15px 20px 20px;
 }
 
-.add-box, .icon, .bottom-content{
+.add-box, .icon, .bottom-content,
+.settings .menu li, .content header{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -93,4 +94,112 @@ body{
     color: #6d6d6d;
     font-size: 17px;
     cursor: pointer;
+}
+
+.settings{
+    cursor: pointer;
+    position: relative;
+}
+
+.settings .menu{
+    position: absolute;
+    bottom: 0;
+    right: -5px;
+    border-radius: 4px;
+    padding: 5px 0;
+    background: #FFF;
+    box-shadow: 0 0 6px rgba(0,0,0,0.15);
+    transform: scale(0);
+    transform-origin: bottom right;
+    transition: transform 0.2s ease;
+}
+
+.settings:hover .menu{
+    transform: scale(1);
+}
+
+.settings .menu li{
+    height: 25px;
+    border-radius: 0;
+    justify-content: flex-start;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 17px 15px;
+}
+
+.menu li:hover{
+    background: #f5f5f5;
+}
+
+.menu li i{
+    padding-right: 8px;
+}
+
+.popup-box{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.4);
+    height: 100%;
+    width: 100%;
+}
+
+.popup-box .popup{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    max-width: 400px;
+    width: 100%;
+    transform: translate(-50%, -50%);
+}
+
+.popup .content{
+    border-radius: 5px;
+    background: #FFf;
+}
+
+.popup .content header{
+    padding: 15px 25px;
+    border-bottom: 1px solid #ccc;
+}
+
+.content header p{
+    color: #12134E;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.content header i{
+    color: #12134E;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.content form{
+    margin: 15px 25px 35px;
+}
+
+.content form .row{
+    margin-bottom: 20px;
+}
+
+form .row label{
+    display: block;
+    font-size: 18px;
+    margin-bottom: 6px;
+}
+
+.content form :where(input, textarea){
+    width: 100%;
+    border: 1px solid #999;
+    border-radius: 4px;
+    outline: none;
+    font-size: 17px;
+    padding: 7px 15px;
+}
+
+.content form textarea{
+    height: 7rem;
+    resize: none;
 }
