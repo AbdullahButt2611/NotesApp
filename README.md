@@ -7,7 +7,7 @@
 <p align = "justify">
 This is a simple HTML, CSS, JS based notes writing app which act as the reminders later on. In this note app, users can easily add, edit, or delete their notes. The notes user has added to this app will be stored in the browser's local storage so, they won't remove on page refresh or tab close. This app is going to help the users to keep track of their important notes and help them reminding the importance of this application which helped them through this. 
 <br><br>
-So, on loading the user will be provided the previously stored notes that he/she has already stored for itself. The user is provided the option to add and delete those notes and these options are available at the ellipses right below the content at right of the date. Moving on, if you are new to this app, then you won't have any of the tabs available except for one to <strong>Create a New Note</strong>. You simply have to click on that tab and the screen will popup including a form to add the content. Here the user have to enter the content that he\she wants to save for later use.
+So, on loading the user will be provided the previously stored notes that he/she has already stored for itself. The user is provided the option to add and delete those notes and these options are available at the ellipses right below the content at right of the date. Moving on, if you are new to this app, then you won't have any of the tabs available except for one to <strong>Create a New Note</strong>. You simply have to click on that tab and the screen will popup including a form to add the content. Here the user have to enter the content that he\she wants to save for later use. Once the user pressed the button, the content will be saved in the brwoser's local storage and the popup box will close automatically displaying the new box displayed on the screen. If the user want to change or delete the note, the user simply have to click on the ellipsis (Three dots) and a menu will open.
 </p>
 
 
@@ -22,6 +22,7 @@ The theme of this application is quite simple and is a single colored theme. The
 Following are some of the highlights of this project:
 - The menu using the ellipsis (Three Dots) has been created for providing edit and delete option
 - To input the data, popup form has been created.
+- Data is Stored and retreieved from the <strong>Browser's Local Ltorage</strong>.
 <br><br>
 
 ## Resources
